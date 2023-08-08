@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <main class="fondo">
+        <div class="form">
+            <form name="calculadora">
+                <input type="textfield" name="ans" autocomplete="off" readonly value="" class="cajita_screen screen" data-screen></input>
+                <input type="button" value="*" class="cajita multi" onclick="document.calculadora.ans.value+='*'"></input>
+                <input type="button" value="/" class="cajita div" onclick="document.calculadora.ans.value+='/'"></input>
+                <input type="button" value="-" class="cajita resta" onclick="document.calculadora.ans.value+='-'"></input>
+                <input type="reset" value="del" class="cajita del"></input>
+                <input type="button" value="9" class="cajita 9" onclick="document.calculadora.ans.value+='9'"></input>
+                <input type="button" value="8" class="cajita 8" onclick="document.calculadora.ans.value+='8'"></input>
+                <input type="button" value="7" class="cajita 7" onclick="document.calculadora.ans.value+='7'"></input>
+                <input type="button" value="+" class="cajita suma" onclick="document.calculadora.ans.value+='+'"></input>
+                <input type="button" value="6" class="cajita 6" onclick="document.calculadora.ans.value+='6'"></input>
+                <input type="button" value="5" class="cajita 5" onclick="document.calculadora.ans.value+='5'"></input>
+                <input type="button" value="4" class="cajita 4" onclick="document.calculadora.ans.value+='4'"></input>
+                <input type="button" value="3" class="cajita 3" onclick="document.calculadora.ans.value+='3'"></input>
+                <input type="button" value="2" class="cajita 2" onclick="document.calculadora.ans.value+='2'"></input>
+                <input type="button" value="1" class="cajita 1" onclick="document.calculadora.ans.value+='1'"></input>
+                <input type="button" value="=" class="cajita igual" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)"></input>
+            </form>
+        </div>
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
